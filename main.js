@@ -58,6 +58,7 @@ app.get("/contact", subscribersController.getSubscriptionPage);
 app.post("/contact", subscribersController.saveSubscriber);
 app.get("/subscribers", subscribersController.getAllSubscribers);
 
+
 // errorController.js
 
 // Listing 12.12 (p. 184)

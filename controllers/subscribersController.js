@@ -56,7 +56,7 @@ exports.saveSubscriber = (req, res) => {
         });
 };
 
-exports.deleteAllSubscribers = (req, res) => {
+exports.deleteAllSubscribers = (req, res, next) => {
   Subscriber.deleteMany({})
       .exec()
       .then(result => {
@@ -71,3 +71,4 @@ exports.deleteAllSubscribers = (req, res) => {
       })
 
 };
+
